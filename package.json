@@ -1,0 +1,18 @@
+{
+  "name": "demo-npm-userdo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "whoami": "node whoami.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/baco16g/demo-npm-userdo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baco16g/demo-npm-userdo/issues"
+  },
+  "homepage": "https://github.com/baco16g/demo-npm-userdo#readme"
+}

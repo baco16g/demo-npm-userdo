@@ -1,0 +1,22 @@
+version: 2.1
+
+executors:
+  my-executor:
+    docker:
+      - image: cimg/node:16.13
+    working_directory: ~/repo
+
+jobs:
+  my-job:
+    executor: my-executor
+    steps:
+      - checkout
+      - run: npm run whoami
+      - run: sudo npm run whoami
+      - run: node whoami.js
+      - run: sudo node whoami.js
+
+workflows:
+  all-jobs:
+    jobs:
+      - my-job
